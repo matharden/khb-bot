@@ -1,7 +1,6 @@
 # Description:
 #   Kamalaisms
 
-cronJob = require('cron').CronJob
 
 lulz = [
   "coolbeanz",
@@ -77,14 +76,6 @@ timed = [
 
 
 module.exports = (robot) ->
-
-  # happy = new cronJob '0 30 8 * * 5',
-  happy = new cronJob '* 42 0 * * 5',
-    ->
-      robot.messageRoom 35196_botwars@conf.hipchat.com, "Happy Friday!"
-    null
-    true
-
 
   robot.respond /wwks/i, (msg) ->
     msg.send msg.random lulz
