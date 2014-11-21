@@ -1,1 +1,1 @@
-web: bin/hubot -a hipchat -n khb-bot
+web: bin/hubot --adapter hipchat
