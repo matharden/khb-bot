@@ -89,6 +89,9 @@ module.exports = (robot) ->
   robot.hear /(l[uo]+l[sz]?|kamala)/i, (msg) ->
     msg.send msg.random lulz
 
+  robot.hear /\bb[ae]y(once)?\b/i, (msg) ->
+    msg.send "I love Beyonce - Surfboard!"
+
   robot.hear /board/i, (msg) ->
     msg.send msg.random boards
 
