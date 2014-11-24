@@ -17,7 +17,7 @@ lulz = [
   "obvs (did you know)",
   "So much dramz up in here",
   "#socialdead",
-  "Where's T-pot",
+  "Where's T-pot?",
   "DASHBOARD",
   "Jeez Louise!",
   "#RAGE",
@@ -45,7 +45,9 @@ lulz = [
   "Mums on tour! Mums on tour! Mums on tour! MUMS ON TOUR!",
   "ballin'",
   "fosure!",
-  "#allofthelolz!"
+  "#allofthelolz!",
+  "#someoneisworking...",
+  "I need unhealthy snacks"
 ]
 
 boards = [
@@ -75,7 +77,8 @@ fails = [
   "#careerfail"
   # "-gate",
   "oh my GOD!",
-  "‘MARE"
+  "‘MARE",
+  "#HPdramz"
 ]
 
 loges = [
