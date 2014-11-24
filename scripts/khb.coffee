@@ -84,7 +84,7 @@ module.exports = (robot) ->
   robot.respond /wwks/i, (msg) ->
     msg.send msg.random lulz
 
-  robot.hear /(l[uo]+l[sz]?|kamala|khb)/i, (msg) ->
+  robot.hear /(l[uo]+l[sz]?|kamala)/i, (msg) ->
     msg.send msg.random lulz
 
   robot.hear /board/i, (msg) ->
