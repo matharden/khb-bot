@@ -24,6 +24,7 @@ lulz = [
   "Binary",
   "ZOMG",
   "Lads on tour!",
+  "Lads on tour! Lads on tour! Lads on tour! LADS ON TOUR!",
   "Adorbs",
   "BFFs",
   "Totes",
@@ -41,8 +42,10 @@ lulz = [
   "Gahtree",
   "You are PVB Bot @mat",
   "Mums on tour!",
+  "Mums on tour! Mums on tour! Mums on tour! MUMS ON TOUR!",
   "ballin'",
-  "fosure!"
+  "fosure!",
+  "#allofthelolz!"
 ]
 
 boards = [
