@@ -17,7 +17,7 @@ lulz = [
   "obvs (did you know)",
   "So much dramz up in here",
   "#socialdead",
-  "T-pot",
+  "Where's T-pot",
   "DASHBOARD",
   "Jeez Louise!",
   "#RAGE",
@@ -40,7 +40,9 @@ lulz = [
   "Gotta skidad",
   "Gahtree",
   "You are PVB Bot @mat",
-  "Mums on tour!"
+  "Mums on tour!",
+  "ballin'",
+  "fosure!"
 ]
 
 boards = [
