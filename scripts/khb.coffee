@@ -3,24 +3,18 @@
 
 
 lulz = [
-  "coolbeanz",
-  "AMAZE!",
   "lolz",
   "Prisy Visy",
   "Go team!",
   "SURFBOARD",
   "WWBD",
   "#whatevs!",
-  "#skillz",
   "OH EM GEE",
-  "shizzle",
   "Buff-ting!",
   "J-Bedz",
   "J-bird",
   "Stannerz",
-  "#winning",
   "obvs (did you know)",
-  "RIDIC",
   "So much dramz up in here",
   "#socialdead",
   "T-pot",
@@ -28,10 +22,7 @@ lulz = [
   "Jeez Louise!",
   "#RAGE",
   "Binary",
-  "#doubleperfect",
   "ZOMG",
-  "brrraap",
-  "WOOOT",
   "Lads on tour!",
   "Adorbs",
   "BFFs",
@@ -39,39 +30,52 @@ lulz = [
   "Bants",
   "#allofthebants",
   "peeps",
-  "boom town",
-  "oh my GOD!",
-  "‘MARE",
   "interessont!!!",
   "duh!",
   "fanx",
   "defo",
-  "coolio",
-  "-gate",
   "roller derby",
-  "LEGEND!",
-  "gré bon",
   "true dat",
   "BUUURN!",
   "Gotta skidad",
+  "Gahtree",
+  "You are PVB Bot @mat",
   "Mums on tour!"
 ]
 
-hears = [
-  "Check the loges!",
-  "Check 'em",
-  "Where’s your work wife @mat?",
-  "lolloway",
-  "Gahtree",
-  "You are PVB Bot @mat",
-  "Can you get me a diet coke",
-  "Cheers champion",
-  "HP the Deatheaters",
-  "#careerfail"
+boards = [
+  "SURFBOARD!",
+  "DASHBOARD!",
 ]
 
-timed = [
-  "Happy Friday!"
+skillz = [
+  "WOOOT",
+  "#skillz",
+  "shizzle",
+  "coolbeanz",
+  "boom town",
+  "AMAZE!",
+  "#winning",
+  "#doubleperfect",
+  "LEGEND!",
+  "gré bon",
+  "coolio",
+  "brrraap",
+  "Cheers champion"
+]
+
+fails = [
+  "RIDIC",
+  "HP the Deatheaters",
+  "#careerfail"
+  # "-gate",
+  "oh my GOD!",
+  "‘MARE"
+]
+
+loges = [
+  "Check the loges!",
+  "Check 'em"
 ]
 
 
@@ -80,11 +84,29 @@ module.exports = (robot) ->
   robot.respond /wwks/i, (msg) ->
     msg.send msg.random lulz
 
+  robot.hear /(l[uo]+l[sz]?|kamala|khb)/i, (msg) ->
+    msg.send msg.random lulz
+
+  robot.hear /board/i, (msg) ->
+    msg.send msg.random boards
+
+  robot.hear /\b(did|done|finish|complete|manage|perform|thanks)(ed)?\b/i, (msg) ->
+    msg.send msg.random skillz
+
+  robot.hear /\b(b[ro0]{2}ken?|hp|fail)\b/i, (msg) ->
+    msg.send msg.random fails
+
   robot.hear /(?=.*\bcheck\b)(?=.*\blogs?).*/i, (msg) ->
-    msg.send "Check the loges!"
+    msg.send msg.random loges
 
   robot.hear /(?=.*\bgoing\b)(?=.*\lunch).*/i, (msg) ->
     msg.send "Can you get me a diet coke?"
+
+  robot.hear /(?=.*\bwhere\b)(?=.*\bnicole).*/i, (msg) ->
+    msg.send "Where’s your work wife @mat?"
+
+  robot.hear /(?=.*\bfriday\b).*/i, (msg) ->
+    msg.send "Happy Friday!"
 
   robot.hear /holloway/i, (msg) ->
     msg.send "lolloway"
