@@ -17,7 +17,6 @@ lulz = [
   "obvs (did you know)",
   "So much dramz up in here",
   "#socialdead",
-  "Where's T-pot?",
   "DASHBOARD",
   "Jeez Louise!",
   "#RAGE",
@@ -39,7 +38,6 @@ lulz = [
   "true dat",
   "BUUURN!",
   "Gotta skidad",
-  "Gahtree",
   "You are PVB Bot @mat",
   "Mums on tour!",
   "Mums on tour! Mums on tour! Mums on tour! MUMS ON TOUR!",
@@ -68,7 +66,8 @@ skillz = [
   "gré bon",
   "coolio",
   "brrraap",
-  "Cheers champion"
+  "Cheers champion",
+  "#EXPERT!"
 ]
 
 fails = [
@@ -107,13 +106,13 @@ module.exports = (robot) ->
   robot.hear /\b(b[ro0]{2}ken?|hp|fail)\b/i, (msg) ->
     msg.send msg.random fails
 
-  robot.hear /(?=.*\bcheck\b)(?=.*\blogs?).*/i, (msg) ->
+  robot.hear /(?=.*\bcheck(ing|ed|s)?\b)(?=.*\blogs?).*/i, (msg) ->
     msg.send msg.random loges
 
   robot.hear /(?=.*\bgoing\b)(?=.*\lunch).*/i, (msg) ->
     msg.send "Can you get me a diet coke?"
 
-  robot.hear /(?=.*\bwhere\b)(?=.*\bnicole).*/i, (msg) ->
+  robot.hear /(?=.*\b(where|seen)\b)(?=.*\bnicole).*/i, (msg) ->
     msg.send "Where’s your work wife @mat?"
 
   robot.hear /(?=.*\bfriday\b).*/i, (msg) ->
@@ -121,3 +120,9 @@ module.exports = (robot) ->
 
   robot.hear /holloway/i, (msg) ->
     msg.send "lolloway"
+
+  robot.hear /gartree/i, (msg) ->
+    msg.send "Gahtree!"
+
+  robot.hear /(?=.*\bdesign\b)(?=.*\bmeeting?).*/i, (msg) ->
+    msg.send "#BOOZED!"
