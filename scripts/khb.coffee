@@ -63,7 +63,7 @@ skillz = [
   "#winning",
   "#doubleperfect",
   "LEGEND!",
-  "gré bon",
+  "tré bon",
   "coolio",
   "brrraap",
   "Cheers champion",
