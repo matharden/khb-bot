@@ -100,7 +100,7 @@ module.exports = (robot) ->
   robot.hear /board/i, (msg) ->
     msg.send msg.random boards
 
-  robot.hear /\b(did|done|finish|complete|manage|perform|thanks)(ed)?\b/i, (msg) ->
+  robot.hear /\b(done|finish|complete|manage|perform|thanks)(ed)?\b/i, (msg) ->
     msg.send msg.random skillz
 
   robot.hear /\b(b[ro0]{2}ken?|hp|fail)\b/i, (msg) ->
