@@ -45,7 +45,8 @@ lulz = [
   "fosure!",
   "#allofthelolz!",
   "#someoneisworking...",
-  "I need unhealthy snacks"
+  "I need unhealthy snacks",
+  "literally zero problems"
 ]
 
 boards = [
@@ -127,5 +128,5 @@ module.exports = (robot) ->
   robot.hear /(?=.*\bdesign\b)(?=.*\bmeeting?).*/i, (msg) ->
     msg.send "#BOOZED!"
 
-  robot.hear /\btime\b/i, (msg) ->
+  robot.hear /what time/i, (msg) ->
     msg.send "lol o'clock"
