@@ -97,7 +97,7 @@ module.exports = (robot) ->
   robot.hear /\bb[ae]y(once)?\b/i, (msg) ->
     msg.send "I love Beyonce - Surfboard!"
 
-  robot.hear /board/i, (msg) ->
+  robot.hear /surfboard/i, (msg) ->
     msg.send msg.random boards
 
   robot.hear /\b(done|finish|complete|manage|perform|thanks)(ed)?\b/i, (msg) ->
