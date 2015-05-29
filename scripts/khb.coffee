@@ -117,8 +117,8 @@ module.exports = (robot) ->
   robot.hear /(?=.*\b(where|seen)\b)(?=.*\bnicole).*/i, (msg) ->
     msg.send "Where’s your work wife @mat?"
 
-  robot.hear /(?=.*\bfriday\b).*/i, (msg) ->
-    msg.send "Happy Friday!"
+  # robot.hear /(?=.*\bfriday\b).*/i, (msg) ->
+  #   msg.send "Happy Friday!"
 
   robot.hear /holloway/i, (msg) ->
     msg.send "lolloway"
